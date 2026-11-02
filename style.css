@@ -61,6 +61,9 @@ header {
     font-size: 15px;
     font-weight: 600;
     transition: 0.3s;
+    border-radius: 7px;
+    border: 2px solid #c4122f;
+    padding: 9px 18px;
 }
 
 .nav-links a:hover {
