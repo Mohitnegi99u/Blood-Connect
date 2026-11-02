@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
 
     background-color: white;
     padding: 18px 7%;
@@ -51,23 +52,30 @@ header {
 /* Navigation Links */
 .nav-links {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    gap: 30px;
+    gap: 12px;
 }
 
+/* Every nav link sits inside its own box */
 .nav-links a {
+    display: inline-block;
     text-decoration: none;
     color: #334155;
+    background-color: white;
     font-size: 15px;
     font-weight: 600;
+    white-space: nowrap;
     transition: 0.3s;
     border-radius: 7px;
     border: 2px solid #c4122f;
     padding: 9px 18px;
 }
 
-.nav-links a:hover {
-    color: #b91c1c;
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #c4122f;
+    color: white;
 }
 
 /* Emergency Button */
@@ -594,7 +602,12 @@ header {
 
     .nav-links {
         flex-wrap: wrap;
-        gap: 14px;
+        gap: 8px;
+    }
+
+    .nav-links a {
+        padding: 7px 12px;
+        font-size: 14px;
     }
 
     .home {
