@@ -1,0 +1,609 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Website body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+    padding: 18px 7%;
+
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#home,
+#find-donor,
+#compatibility {
+    scroll-margin-top: 96px;
+}
+
+/* Logo */
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #b91c1c;
+}
+
+.logo span {
+    font-size: 25px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #334155;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #b91c1c;
+}
+
+/* Emergency Button */
+.emergency-btn {
+    background-color: #b91c1c;
+    color: white;
+    text-decoration: none;
+
+    padding: 11px 20px;
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.emergency-btn:hover {
+    background-color: #991b1b;
+}
+
+.emergency {
+    background-color: #9d1027;
+    padding: 20px;
+    color: white;
+}
+
+.emergency-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.emergency-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.emergency-list {
+    padding-left: 20px;
+}
+
+.emergency-list li {
+    padding: 2px;
+}
+
+.emergency-list a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Home Section */
+.home {
+    background-color: #fff1f2;
+    padding: 65px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Left Side */
+.home-text {
+    max-width: 650px;
+}
+
+.home-text h1 {
+    font-size: 44px;
+    color: #16212b;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 18px;
+    color: #55626d;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Home Buttons */
+.home-buttons a {
+    display: inline-block;
+    padding: 15px 22px;
+    margin-right: 8px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-buttons .btn1 {
+    background-color: #c4122f;
+    color: white;
+}
+
+.home-buttons .btn2 {
+    background-color: white;
+    color: #c4122f;
+    border: 2px solid #c4122f;
+}
+
+/* Blood Groups Card */
+.home-types {
+    background-color: white;
+    width: 387px;
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.home-types-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #16212b;
+    margin-bottom: 18px;
+}
+
+/* Blood Group Grid */
+.type-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.type-grid li {
+    background-color: #fff1f2;
+    color: #c4122f;
+    padding: 15px 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.type-grid .o {
+    background-color: #c4122f;
+    color: white;
+}
+
+/* Blood Group Note */
+.home-types-note {
+    color: #55626d;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+/* Find Donor Section */
+.find-donor {
+    background-color: white;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.find-donor h2 {
+    font-size: 32px;
+    color: #16212b;
+    margin-bottom: 10px;
+}
+
+.find-donor p {
+    font-size: 16px;
+    color: #55626d;
+    margin-bottom: 30px;
+}
+
+/* Search Form */
+.search-form {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Dropdown and Input */
+.search-form select,
+.search-form input {
+    flex: 1;
+    padding: 14px;
+    font-size: 15px;
+    border: 1px solid #d9e0e5;
+    border-radius: 7px;
+    outline: none;
+}
+
+/* Focus Effect */
+.search-form select:focus,
+.search-form input:focus {
+    border-color: #c4122f;
+}
+
+/* Search Button */
+.search-form button {
+    background-color: #c4122f;
+    color: white;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #9a0d24;
+}
+
+/* Donor Results Section */
+.donor-results {
+    max-width: 900px;
+    margin: 40px auto 0;
+    text-align: left;
+}
+
+.donor-results h3 {
+    font-size: 22px;
+    color: #16212b;
+    margin-bottom: 20px;
+}
+
+/* Donor List */
+.donor-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual Donor */
+.donor-list li {
+    background-color: #fff1f2;
+    padding: 18px;
+    margin-bottom: 12px;
+    border: 1px solid #f5c6cc;
+    border-radius: 8px;
+    color: #16212b;
+}
+
+/* Donor Details */
+.donor-list li strong {
+    font-size: 17px;
+    color: #c4122f;
+}
+
+.donor-list li p {
+    font-size: 14px;
+    color: #55626d;
+    margin: 6px 0 0;
+}
+
+/* Registration Page */
+.become-donor {
+    background-color: #fff1f2;
+    min-height: 100vh;
+    padding: 40px 5%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Back to Home Link */
+.back-home {
+    display: inline-block;
+    color: #c4122f;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.back-home:hover {
+    color: #9a0d24;
+}
+
+/* Heading */
+.become-donor h2 {
+    font-size: 32px;
+    color: #16212b;
+    margin-bottom: 10px;
+}
+
+.become-donor p {
+    font-size: 16px;
+    color: #55626d;
+    margin-bottom: 30px;
+}
+
+/* Registration Form */
+.donor-form {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+/* Input Fields */
+.donor-form input,
+.donor-form select {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    border: 1px solid #d9e0e5;
+    border-radius: 7px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Input Focus */
+.donor-form input:focus,
+.donor-form select:focus {
+    border-color: #c4122f;
+}
+
+/* Register Button */
+.donor-form button {
+    background-color: #c4122f;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-form button[type="reset"] {
+    background-color: white;
+    color: #c4122f;
+    border: 2px solid #c4122f;
+}
+
+.donor-form button:hover {
+    background-color: #9a0d24;
+}
+
+/* Success Message */
+.donor-form p {
+    color: green;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Blood Compatibility Section */
+.compatibility {
+    background-color: #fff1f2;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.compatibility h2 {
+    font-size: 32px;
+    color: #16212b;
+    margin-bottom: 10px;
+}
+
+.compatibility>p {
+    color: #55626d;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Universal Donor and Receiver Cards */
+.universal {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.u-card {
+    background-color: white;
+    max-width: 350px;
+    flex: 1;
+    padding: 25px;
+    border: 1px solid #f5c6cc;
+    border-radius: 12px;
+}
+
+.u-card h3 {
+    color: #c4122f;
+    margin-bottom: 12px;
+}
+
+.u-card p {
+    color: #55626d;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Table Container */
+.table-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #f5c6cc;
+}
+
+/* Table */
+.compatibility table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+/* Table Caption */
+.compatibility caption {
+    padding: 18px;
+    color: #16212b;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Table Header */
+.compatibility thead th {
+    background-color: #c4122f;
+    color: white;
+    padding: 16px 12px;
+    font-size: 14px;
+}
+
+/* First Header Cell */
+.compatibility thead th:first-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Table Body Cells */
+.compatibility tbody td,
+.compatibility tbody th {
+    padding: 15px 12px;
+    border-bottom: 1px solid #f0dadd;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Blood Group Names */
+.compatibility tbody th {
+    color: #16212b;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Alternate Row Colors */
+.compatibility tbody tr:nth-child(even) {
+    background-color: #fff7f8;
+}
+
+/* Highlight O- and AB+ Rows */
+.compatibility tbody tr.highlight {
+    background-color: #fee2e2;
+    font-weight: bold;
+}
+
+/* Compatible Marks */
+.compatibility tbody td {
+    color: #18864b;
+    font-weight: bold;
+}
+
+/* Not Compatible Marks */
+.compatibility tbody td.no {
+    color: #9ca3af;
+    font-weight: normal;
+}
+
+/* Table Hover */
+.compatibility tbody tr:hover {
+    background-color: #fce7eb;
+}
+
+/* Compatibility Note */
+.compatibility .compatibility-note {
+    margin: 20px 0 0;
+    font-size: 14px;
+    color: #55626d;
+}
+
+/* Footer Section */
+.site-footer {
+    background-color: #16212b;
+    color: white;
+    text-align: center;
+    padding: 30px 5%;
+}
+
+/* Footer Text */
+.site-footer p {
+    color: #cbd5e1;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Website Name */
+.site-footer strong {
+    color: #ff6b81;
+    font-size: 20px;
+}
+
+/* Small Disclaimer */
+.site-footer .small {
+    font-size: 12px;
+    color: #aab5c0;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-types {
+        width: 100%;
+    }
+
+    .search-form,
+    .universal {
+        flex-direction: column;
+    }
+}

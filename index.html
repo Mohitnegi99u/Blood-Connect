@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Connect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Emergency Blood Request Section -->
+    <section class="emergency" id="emergency">
+
+        <div class="emergency-inner">
+
+            <p class="emergency-label">
+                EMERGENCY BLOOD NEEDED
+            </p>
+
+            <ul class="emergency-list">
+
+                <li>
+                    <strong>O-</strong>
+                    City Hospital, ICU ·
+                    <a href="tel:+919000000001">Call +91 90000 00001</a>
+                </li>
+
+                <li>
+                    <strong>B+</strong>
+                    Lakeside Clinic, Ward 4 ·
+                    <a href="tel:+919000000002">Call +91 90000 00002</a>
+                </li>
+
+                <li>
+                    <strong>AB-</strong>
+                    Central Medical, Surgery ·
+                    <a href="tel:+919000000003">Call +91 90000 00003</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <!-- Website Logo -->
+            <div class="logo">
+                <span>🩸</span> Blood Connect
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#find-donor">Find a Donor</a></li>
+                <li><a href="register.html">Become a Donor</a></li>
+                <li><a href="#compatibility">Compatibility</a></li>
+            </ul>
+
+            <!-- Emergency Button -->
+            <a href="#emergency" class="emergency-btn">
+                Emergency
+            </a>
+
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section class="home" id="home">
+
+            <div class="home-text">
+
+                <h1>Every Drop Counts, Every Life Matters.</h1>
+
+                <p>Donate blood, save lives. Connect with voluntary blood donors
+                    and help someone in need. Your one donation can make a difference.</p>
+
+                <div class="home-buttons">
+
+                    <a class="btn1" href="#find-donor">Find a Donor</a>
+
+                    <a class="btn2" href="register.html">Become a Donor</a>
+
+                </div>
+
+            </div>
+
+            <div class="home-types" aria-label="Blood groups">
+
+                <p class="home-types-title">All eight groups</p>
+
+                <ul class="type-grid">
+                    <li>A+</li>
+                    <li>A&minus;</li>
+                    <li>B+</li>
+                    <li>B&minus;</li>
+                    <li>AB+</li>
+                    <li>AB&minus;</li>
+                    <li class="o">O+</li>
+                    <li class="o">O&minus;</li>
+                </ul>
+
+                <p class="home-types-note">O&minus; can be given to anyone, so it is always in demand.</p>
+
+            </div>
+
+        </section>
+
+        <!-- Find Donor Section -->
+        <section class="find-donor" id="find-donor">
+
+            <h2>Find a Blood Donor</h2>
+
+            <p>Search for available blood donors in your area.</p>
+
+            <form class="search-form" id="search-form">
+
+                <select name="blood-group" id="blood-group">
+                    <option value="">Select Blood Group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+
+                <input type="text" name="city-area" id="city-area" placeholder="Enter City Area">
+
+                <button type="submit">Search Donors</button>
+                <button type="reset">Clear</button>
+
+            </form>
+
+            <!-- Donor Search Results -->
+            <div class="donor-results" id="donor-results">
+
+                <h3>Available Donors</h3>
+
+                <ul class="donor-list" id="donor-list">
+
+                    <!-- JavaScript will add donor details here -->
+                    <li>
+                        <strong>Rahul Sharma</strong>
+                        <p>Blood Group: O-</p>
+                        <p>Area: Phagwara</p>
+                        <p>Contact: 9876543210</p>
+                    </li>
+
+                    <li>
+                        <strong>Amit Kumar</strong>
+                        <p>Blood Group: B+</p>
+                        <p>Area: Ludhiana</p>
+                        <p>Contact: 9876543211</p>
+                    </li>
+
+                    <li>
+                        <strong>Priya Singh</strong>
+                        <p>Blood Group: A+</p>
+                        <p>Area: Jalandhar</p>
+                        <p>Contact: 9876543212</p>
+                    </li>
+
+                    <li>
+                        <strong>Rohit Verma</strong>
+                        <p>Blood Group: O+</p>
+                        <p>Area: Jalandhar</p>
+                        <p>Contact: 9876543213</p>
+                    </li>
+
+                    <li>
+                        <strong>Neha Rawat</strong>
+                        <p>Blood Group: AB-</p>
+                        <p>Area: Phagwara</p>
+                        <p>Contact: 9876543214</p>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- Blood Compatibility Section -->
+        <section class="compatibility" id="compatibility">
+
+            <h2>Blood Compatibility</h2>
+
+            <p>Check which blood groups can donate to others.</p>
+
+            <!-- Universal Donor and Receiver -->
+            <div class="universal">
+
+                <div class="u-card">
+                    <h3>O- Universal Donor</h3>
+                    <p>O- can donate red blood cells to all 8 blood groups.</p>
+                </div>
+
+                <div class="u-card">
+                    <h3>AB+ Universal Receiver</h3>
+                    <p>AB+ can receive red blood cells from all 8 blood groups.</p>
+                </div>
+
+            </div>
+
+            <!-- Compatibility Table -->
+            <div class="table-wrap">
+
+                <table>
+
+                    <caption>Blood group donation compatibility</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Donor</th>
+                            <th>A+</th>
+                            <th>A-</th>
+                            <th>B+</th>
+                            <th>B-</th>
+                            <th>AB+</th>
+                            <th>AB-</th>
+                            <th>O+</th>
+                            <th>O-</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr class="highlight">
+                            <th>O-</th>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+
+                        <tr>
+                            <th>O+</th>
+                            <td>✓</td>
+                            <td class="no">&ndash;</td>
+                            <td>✓</td>
+                            <td class="no">&ndash;</td>
+                            <td>✓</td>
+                            <td class="no">&ndash;</td>
+                            <td>✓</td>
+                            <td class="no">&ndash;</td>
+                        </tr>
+
+                        <tr>
+                            <th>A-</th>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                        </tr>
+
+                        <tr>
+                            <th>A+</th>
+                            <td>✓</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                            <td>✓</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                        </tr>
+
+                        <tr>
+                            <th>B-</th>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                        </tr>
+
+                        <tr>
+                            <th>B+</th>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                            <td>✓</td>
+                            <td class="no">&ndash;</td>
+                            <td>✓</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                        </tr>
+
+                        <tr>
+                            <th>AB-</th>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                        </tr>
+
+                        <tr class="highlight">
+                            <th>AB+</th>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                            <td>✓</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                            <td class="no">&ndash;</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p class="compatibility-note">
+                ✓ Compatible &nbsp;&nbsp; &ndash; Not compatible
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <p><strong>Blood Connect</strong></p>
+
+        <p>Helpline: +00 000 000 0000 &middot; help@example.org</p>
+
+        <p class="small">All donors are volunteers. Always confirm blood group and screening at a hospital or licensed
+            blood bank.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
